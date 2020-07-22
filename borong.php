@@ -16,7 +16,7 @@ function request($url, $headers, $put = null) {
 }
 
 function regis($email, $nomor, $id) {
-$url = "https://m.borongbareng.com/api-gateway/service-marketing/app/bargain/help/$id=35832";
+$url = "https://m.borongbareng.com/api-gateway/service-marketing/app/bargain/help/$id";
 //$data = '[{"operationName":"OTPRequest","variables":{"email":"'.$email.'","otpType":"126","mode":"email","otpDigit":4},"query":"query OTPRequest($otpType: String!, $mode: String, $msisdn: String, $email: String, $otpDigit: Int) {\n  OTPRequest(otpType: $otpType, mode: $mode, msisdn: $msisdn, email: $email, otpDigit: $otpDigit) {\n    success\n    message\n    errorMessage\n    __typename\n  }\n}\n"}]';
 $headers = array();
 $headers [] = "Host: m.borongbareng.com";
@@ -24,7 +24,7 @@ $headers [] = "Connection: close";
 $headers [] = "Accept: application/json, text/plain, */*";
 $headers [] = "language: Indonesian";
 $headers [] = "Authorization: $email";
-$headers [] = "User-Agent: Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Mobile Safari/537.36";
+$headers [] = "User-Agent: Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36";
 $headers [] = "Sec-Fetch-Site: same-origin";
 $headers [] = "Sec-Fetch-Mode: cors";
 $headers [] = "Sec-Fetch-Dest: empty";
@@ -46,7 +46,7 @@ if ($json['code'] == 0) {
 }
 
 function getno($id) {
-$url = "https://m.borongbareng.com/api-gateway/service-marketing/app/bargain/self/detail/$id=35832";
+$url = "https://m.borongbareng.com/api-gateway/service-marketing/app/bargain/self/detail/$id";
 //$data = '[{"operationName":"OTPRequest","variables":{"email":"'.$email.'","otpType":"126","mode":"email","otpDigit":4},"query":"query OTPRequest($otpType: String!, $mode: String, $msisdn: String, $email: String, $otpDigit: Int) {\n  OTPRequest(otpType: $otpType, mode: $mode, msisdn: $msisdn, email: $email, otpDigit: $otpDigit) {\n    success\n    message\n    errorMessage\n    __typename\n  }\n}\n"}]';
 $headers = array();
 $headers [] = "Host: m.borongbareng.com";
@@ -54,7 +54,7 @@ $headers [] = "Connection: close";
 $headers [] = "Accept: application/json, text/plain, */*";
 $headers [] = "language: Indonesian";
 $headers [] = "Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBcHAiLCJleHAiOjE1OTMyMTMwNjQsImlhdCI6MTU5MzEyNjY2NCwidXNlciI6IntcImlkXCI6NTA3OTMsXCJuaWNrbmFtZVwiOlwiODkqKio2OTk1NjQ1XCIsXCJ1c2VybmFtZVwiOlwiKDYyKTg5NTM0Njk5NTY0NVwiLFwiYXZhdGFyXCI6XCJodHRwczovL2Jvcm9uZ2JhcmVuZy1oNS5vc3MtYXAtc291dGhlYXN0LTUuYWxpeXVuY3MuY29tL2Rldi8yMDIwMDQxMy9jMGJmOTY5NDNjYTE0YWU0OTZjOTA4MDRhN2YzZjNhZC5qcGdcIixcImxhbmd1YWdlXCI6bnVsbH0ifQ.BZdhJM-k37AKs8XeiZ_mhN0xMPqZo9CL3omeaGuRfkM";
-$headers [] = "User-Agent: Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Mobile Safari/537.36";
+$headers [] = "User-Agent: Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36";
 $headers [] = "Sec-Fetch-Site: same-origin";
 $headers [] = "Sec-Fetch-Mode: cors";
 $headers [] = "Sec-Fetch-Dest: empty";
